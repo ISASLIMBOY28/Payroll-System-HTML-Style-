@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>De Sinefil Payroll System - Formulir Gaji</title>
+	</head>
+
+<body style="background-color:#DCD8D5;margin: 0; width: 100%; height: 100%;">
+
+<header style="background-color:#323232; position:sticky; top:0; width:100%; margin: 0; padding: 0">
+      <a href="home.html"><img id="logo" src="public/img/logoweb1.png" width="200px" style="border-radius: 8px; padding-top:10px;"/></a>
+      <nav style="float:right;">
+        <ul style="list-style-type: none; overflow: hidden; margin-right: 10px; margin-top: 25px;">
+		<div style="font-weight: bolder; font-size: 13px; font-family:Arial; text-transform: capitalize;">
+          <a href="home.html" style="text-decoration:none"><li style="display:inline; margin:12px; color:white;">Home</li></a>
+          <a href="form-gaji.html" style="text-decoration:none"><li style="display:inline; margin:12px; color:white;">Form Gaji</li></a>
+		  <a href="list-gaji.html" style="text-decoration:none"><li style="display:inline; margin:12px; color:white;">List Gaji</li></a>
+		  <a href="contactus.html" style="text-decoration:none"><li style="display:inline; margin:12px; color:white;">Contact Us</li></a>
+		  <a href="aboutus.html" style="text-decoration:none"><li style="display:inline; margin:12px; color:white;">About Us</li></a>
+        </div>
+		</ul>
+      </nav>
+</header>
+
+<section style="background-color: whitesmoke; margin-top: 40px; margin-left: 120px; margin-right: 120px; margin-bottom: 40px; padding-top: 40px; padding-bottom: 40px;">
+	<h2 style="margin-right: 100px; margin-left: 100px; padding-bottom:30px; border-bottom: 3px solid #000; text-align:center;">FORMULIR GAJI KARYAWAN</h2>
+<form action="confirmform.html">
+			<table style="font-size:15px; font-family:Georgia; height:500px; border:0px; margin-left:auto; margin-right:auto;">
+				<tr>
+					<td>
+					<label for="nama">Nama</label>
+					</td>
+					<td> :&ensp;
+					<input type="text" size="25" placeholder="Nama lengkap anda" id="nama" required />
+					</td>
+				</tr>
+				<tr>
+					<td>
+                    <label for="alamat">ID Karyawan</label>
+					</td>	
+					<td> :&ensp;
+					<input type="text" size="25" placeholder="011**************" id="nama" required />
+					</td>
+				</tr>
+				<tr>
+					<td>
+					<label for="norek">No. Rekening</label>
+                    </td>
+					<td> :&ensp;
+					<input type="text" size="25" placeholder="757xxxxxxxx" id="norek" required />
+					</td>
+				</tr>
+				<tr>
+					<td>
+					<label for="email">E-mail</label>
+                    </td>
+					<td> :&ensp;
+					<input type="text" size="25" placeholder="xxxxx@xxx.com" id="email" required />
+					</td>
+				</tr>
+				<tr>
+					<td>
+					<label for="tanggal">Tanggal Gaji</label>
+					</td>	
+					<td> :&ensp;
+					<input type="date" size="25" id="tanggal" name="TanggalGaji" required />
+					</td>
+				</tr>
+				<tr>
+					<td>
+					<label for="gender">Jenis Kelamin</label>
+					</td>	
+					<td> :&ensp;
+					<input type="radio" name="gender_user" value="1" required="required">Male
+					<input type="radio" name="gender_user" value="2" required="required">Female
+					</td>
+				</tr>
+				<tr>
+					<td>
+					<label for="status">Status</label>
+					</td>	
+					<td> :&ensp;
+					<input type="radio" name="Status" value="1" required="required">Single
+					<input type="radio" name="Status" value="2" required="required">Married
+					</td>
+				</tr>
+				<tr>
+					<td>
+					<label for="divisi">Divisi</label>
+                    </td>   
+					<td> :&ensp;
+					<select style="width:210px;" required>
+                    <option value="">None</option>
+                    <option value="Programming">Programming</option>
+                    <option value="Human Resource Department">Human Resource Department</option>
+                    <option value="Marketing">Marketing</option>
+                    <option value="Production">Production</option>
+                    <option value="Finance">Finance</option>
+                </select>
+					</td>
+				</tr>
+				<tr>
+					<td>
+					<label for="jabatan">Jabatan</label>
+                    </td>   
+					<td> :&ensp;
+					<select style="width:210px;" required>
+                    <option value="">None</option>
+
+                    <optgroup label="Programming">
+                    <option value="UX Designer">UX Designer</option>
+                    <option value="Front End Developer">Front End Developer</option>
+                    <option value="Back End Developer">Back End Developer</option>
+                    <option value="Mobile Developer">Mobile Developer</option>
+					<option value="Quality Assurance">Quality Assurance</option>
+					<option value="Software Engineer">Software Engineer</option>
+					<option value="Cyber Security">Cyber Security</option>
+                    </optgroup>
+
+                    <optgroup label ="Human Resource Department">
+                    <option value="Recruitment Staff<">Recruitment Staff</option>
+                    <option value="Payroll Staff">Payroll Staff</option>
+                    <option value="Benefits Specialist">Benefits Specialist</option>
+                    <option value="Training and Dev Specialist">Training and Dev Specialist</option>
+					<option value="HR Manager">HR Manager</option>
+					<option value="Chief HR Officer">Chief HR Officer</option>
+                    </optgroup>
+					
+					<optgroup label ="Marketing">
+                    <option value="Copywriter">Copywriter</option>
+                    <option value="Graphic Designer">Graphic Designer</option>
+                    <option value="Social Media Specialist">Social Media Specialist</option>
+                    <option value="Content Writer">Content Writer</option>
+					<option value="Market Researcher">Market Researcher</option>
+                    </optgroup>
+					
+					<optgroup label ="Production">
+                    <option value="Production General Manager">Production General Manager</option>
+                    <option value="Production Supervisor">Production Supervisor</option>
+                    <option value="Production Leader">Production Leader</option>
+                    <option value="Production Assistant Manager">Production Assistant Manager</option>
+                    </optgroup>
+					
+					<optgroup label ="Finance">
+                    <option value="Finance Junior Staff">Finance Junior Staff</option>
+                    <option value="Finance Senior Staff">Finance Senior Staff</option>
+                    <option value="Finance Manager">Finance Manager</option>
+                    </optgroup>
+                </select>
+					</td>
+				</tr>
+				<tr>
+					<td>
+					<label for="card">Kartu Karyawan</label>
+                    </td>
+					<td> :&ensp;
+					<input type="file" id="myFile" name="cardfile" accept=".png, .jpg, .jpeg, .pdf" required />
+					</td>
+				</tr>
+				<tr>
+					<td COLSPAN="2" style="text-align:center;">
+					<input type="submit" value="SUBMIT"/>&ensp;<input type="reset" value="RESET"/>
+					</td>
+				</tr>
+			</table>
+</section>
+
+<footer style="color: white; position: absolute; font-style: oblique; font-weight: bolder; text-align: center; border: 1px solid black; text-decoration: wavy; background-color: #323232; padding-top:3px; right: 0; padding-bottom:3px; left: 0;">
+      <h4>Copyright &copy; 2021 by Jason Terry - 201943500588</h4>
+</footer>
+
+</body>
+
+</html>
